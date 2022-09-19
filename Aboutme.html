@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <!-- BOOTSTRAP CSS -->
+   	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
 </head>
 <body>
 
@@ -35,19 +37,45 @@
     </header>
 
     <main class="contenedor">
-        <h3 class="centrar-texto">About Me</h3>
 
-        <div class="sobre-nosotros">
-            <div class="sobre-nosotros__imagen">
-                <img src="Imagenes/imagen-articulo-nombres.jpg" alt="imagen nosotros">
+        <div class="sobre-nosotros margin-top">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="Imagenes/imagen-articulo-nombres.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="Imagenes/images.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="Imagenes/plantillas-gratis-wordpress.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">HOLAAAAAAA</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
+            <div class="sobre-nosotros__texto margin-top">
 
-            <div class="sobre-nosotros__texto">
+                <h2 class="centrar-texto">About Me</h2>
+
                 <p>Pellentesque lacus orci, mattis cursus est in, finibus sagittis mi. Sed iaculis elit et porta luctus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas lacinia est vitae eros posuere, non commodo justo viverra. Sed finibus id elit sit amet egestas. Nullam ac urna odio. Fusce vestibulum venenatis quam in scelerisque. Maecenas ultricies ultricies velit, non suscipit enim. Vivamus massa velit, lobortis fringilla laoreet in, suscipit vitae velit. Etiam at orci euismod magna rhoncus luctus. Curabitur viverra est ut elit gravida rutrum. Nullam eget viverra enim. Quisque vitae varius urna.</p>
 
                 <p>Maecenas commodo erat ac elit elementum, ac eleifend arcu gravida. Donec commodo auctor augue, eget tempor dui fermentum in. Duis non enim vitae metus accumsan vehicula. Pellentesque egestas diam ut ante aliquet, sit amet fringilla odio interdum. In nec odio nec turpis faucibus sagittis. Sed quis tellus nec ante luctus aliquam sit amet vel mauris. Nunc vitae facilisis mauris, posuere tristique arcu. Praesent nisi urna, venenatis non laoreet</p>
             </div>
+
         </div>
+
     </main>
 
     <footer class="footer">
@@ -63,7 +91,8 @@
                 </nav>
         </div>
     </footer>
-    
+    <!-- JS DE BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/modernizr.js"></script>
 </body>
 </html>

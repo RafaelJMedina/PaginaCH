@@ -5,19 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Comisión 41520</title>
     <meta name="description" content="Página web de blog de café">
-
     <!-- Prefetch -->
     <link rel="prefetch" href="nosotros.html" as="document">
-
     <!-- Preload -->
     <link rel="preload" href="css/normalize.css" as="style">
     <link rel="stylesheet" href="css/normalize.css">
-
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"  crossorigin="crossorigin" as="font">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    
     <link rel="preload" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css">
+    <!-- BOOTSTRAP CSS -->
+   	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
 </head>
 <body>
 
@@ -46,57 +44,37 @@
     </header>
 
     <div class="contenedor contenido-principal">
-        <main class="blog">
-            <h3>My Blog</h3>
-
-            <article class="entrada">
-                <div class="entrada__imagen">
-                    <picture>
-                        <source loading="lazy"  srcset="Imagenes/tecnologia.jpg" type="image/webp">
-                        <img loading="lazy" src="Imagenes/tecnologia.jpg" alt="imagen blog"> 
-                    </picture>
+        <main>
+            <div class="card margin-top" style="width: 85rem;">
+                <img src="Imagenes/tecnologia.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h2 class="card-title">My blog</h2>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, temporibus? Saepe sapiente tempora aspernatur nisi! Officia molestiae sit tempore nobis, atque nihil corrupti dolor omnis, odit aliquid dolore saepe numquam.</p>
+                    <a href="Aboutme.html" class="btn btn-primary">READ POST</a>
                 </div>
+            </div>
 
-                <div class="entrada__contenido">
-                    <h4 class="no-margin">Some Data</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, rerum, reprehenderit consequatur perferendis officia, vitae fuga animi temporibus itaque atque reiciendis ea excepturi! Molestias aperiam fugiat deleniti laudantium atque numquam?</p>
-                    <a href="Aboutme.html" class="boton boton--primario">Read Post</a>
+            <div class="card margin-top" style="width: 85rem;">
+                <img src="Imagenes/images.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h2 class="card-title">My goals</h2>
+                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum accusamus maiores fugit mollitia consectetur nesciunt quasi dolorum reiciendis, ipsa sunt, libero quo inventore repudiandae illo itaque blanditiis cumque animi eveniet?</p>
+                    <a href="Aboutme.html" class="btn btn-primary">READ POST</a>
                 </div>
-            </article>
+            </div>
 
-            <article class="entrada">
-                <div class="entrada__imagen">
-                    <picture>
-                        <source loading="lazy"  srcset="Imagenes/images.png" type="image/webp">
-                        <img loading="lazy" src="Imagenes/images.png" alt="imagen blog"> 
-                    </picture>
+            <div class="card margin-top" style="width: 85rem;">
+                <img src="Imagenes/plantillas-gratis-wordpress.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h2 class="card-title">My Portfolio</h2>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="Works.html" class="btn btn-primary">ROAD POST</a>
                 </div>
-
-                <div class="entrada__contenido">
-                    <h4 class="no-margin">My goals</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, rerum, reprehenderit consequatur perferendis officia, vitae fuga animi temporibus itaque atque reiciendis ea excepturi! Molestias aperiam fugiat deleniti laudantium atque numquam?</p>
-                    <a href="Aboutme.html" class="boton boton--primario">Read Post</a>
-                </div>
-            </article>
-
-            <article class="entrada">
-                <div class="entrada__imagen">
-                    <picture>
-                        <source loading="lazy"  srcset="Imagenes/plantillas-gratis-wordpress.jpg" type="image/webp">
-                        <img loading="lazy" src="Imagenes/plantillas-gratis-wordpress.jpg" alt="imagen blog"> 
-                    </picture>
-                </div>
-
-                <div class="entrada__contenido">
-                    <h4 class="no-margin">My portfolio</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, rerum, reprehenderit consequatur perferendis officia, vitae fuga animi temporibus itaque atque reiciendis ea excepturi! Molestias aperiam fugiat deleniti laudantium atque numquam?</p>
-                    <a href="Works.html" class="boton boton--primario">Read Post</a>
-                </div>
-            </article>
+            </div>
         </main>
 
-        <aside class="sidebar">
-            <h3>My courses and workshops</h3>
+        <aside class="sidebar margin-top">
+            <h1>My courses and workshops</h1>
 
             <ul class="cursos no-padding">
                 <li class="widget-curso">
@@ -107,10 +85,10 @@
                     <p class="widget-curso__label">Made: 
                         <span class="widget-curso__info">In Coderhouse</span>
                     </p>
-                    <a href="Studies.html" class="boton boton--secundario">Read Post</a>
+                    <a href="Studies.html" class="btn btn-dark margin-bottom">Read Post</a>
                 </li>
 
-                <li class="widget-curso">
+                <li class="widget-curso margin-top">
                     <h4 class="no-margin">Date about me</h4>
                     <p class="widget-curso__label">Web development: 
                         <span class="widget-curso__info">In progress</span>
@@ -127,7 +105,7 @@
                     <p class="widget-curso__label">Backend:
                         <span class="widget-curso__info">In progress</span>
                     </p>
-                    <a href="Studies.html" class="boton boton--secundario">Read Post</a>
+                    <a href="Studies.html" class="btn btn-dark">Read Post</a>
                 </li>
             </ul>
         </aside>
@@ -146,7 +124,8 @@
                 </nav>
         </div>
     </footer>
-    
+    <!-- JS DE BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/modernizr.js"></script>
 </body>
 </html>

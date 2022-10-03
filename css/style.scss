@@ -2,6 +2,9 @@
 @import "./partials/main";
 @import "./partials/footer";
 
+
+/** Globales **/
+
 :root {
     --fuenteHeading: 'PT Sans', sans-serif;
     --fuenteParrafos: 'Open Sans', sans-serif;
@@ -25,7 +28,6 @@ body {
     line-height: 2;
 }
 
-/** Globales **/
 .contenedor {
     width: min(90%, 120rem);
     margin: 0 auto;
@@ -241,3 +243,4 @@ img {
 .campo__field--textarea {
     height: 20rem;
 }
+

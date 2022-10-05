@@ -24,13 +24,11 @@ header {
                     text-align: center;
                 }
             }
-            .navegacion {
-                .navegacion_enlace {
-                    display: block;
-                    text-align: center;
-                    font-size: 1.8rem;
-                    color: var(--blanco);
-                }
+            .navegacion { 
+                display: block;
+                text-align: center;
+                font-size: 1.8rem;
+                color: var(--blanco);
             }
         }
     }
@@ -57,7 +55,7 @@ header {
 
 @media (min-width: 768px) {
     .navegacion {
-        display: block;
+        display: flex;
         gap: 2rem;
         text-align: center;
     }

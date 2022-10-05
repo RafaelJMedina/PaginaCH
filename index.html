@@ -18,19 +18,54 @@
     <header class="header">
 
         <div class="contenedor">
-            <div class="barra">
+            <div class="barra nav justify-content-end">
                 <a style="color:white;" class="logo" href="index.html">
-                    <h1 style="color: white;" class="logo__nombre no-margin centrar-texto">Rafael<span style="color:white;" class="logo__bold"> Medina</span></h1>
+                    <h1 style="color: white;" class="logo__nombre no-margin centrar-texto">Rafael<span style="color:white;" class="logo__bold">Medina</span></h1>
                 </a>
-
-                <nav class="navegacion">
-                    <a href="index.html" style="color:white;" class="navegacion__enlace">Start</a>
-                    <a href="Aboutme.html" style="color:white;" class="navegacion__enlace">About Me</a>
-                    <a href="Studies.html" style="color:white;" class="navegacion__enlace">Studies</a>
-                    <a href="Works.html" style="color:white;" class="navegacion__enlace">Works</a>
-                    <a href="contacto.html" style="color:white;" class="navegacion__enlace">Contact</a>
-                </nav>
             </div>
+        
+
+            <nav class="navbar navbar-dark bg-dark fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Rafael Jesus Medina</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Home</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Start</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Aboutme.html">About Me</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                See more
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="Studies.html">Studies</a></li>
+                                <li><a class="dropdown-item" href="Works.html">Works</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="contacto.html">Contact me</a></li>
+                                </ul>
+                            </li>
+                            </ul>
+                            <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-success" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </nav>
         </div>
 
         <div class="header__texto">

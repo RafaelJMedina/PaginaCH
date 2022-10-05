@@ -3,8 +3,8 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url(../Imagenes/Fondoinicio.jpg);
-  background-image: url(../Imagenes/Fondoinicio.jpg);
+  background-image: url(../Imagenes/Inicio.png);
+  background-image: url(../Imagenes/Inicio.png);
 }
 header .contenedor {
   width: min(90%, 120rem);
@@ -25,7 +25,7 @@ header .contenedor .barra .logo .no-margin {
 header .contenedor .barra .logo .centrar-texto {
   text-align: center;
 }
-header .contenedor .barra .navegacion .navegacion_enlace {
+header .contenedor .barra .navegacion {
   display: block;
   text-align: center;
   font-size: 1.8rem;

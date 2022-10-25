@@ -2,161 +2,246 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="HTML, CSS, JS, FULL STACK, Developer">
     <meta name="description" content="Soy un estudiante en la carrera de desarrollador full stack, creando un sitio web como portafolio y habilidades. En busca de retos y trabajos interesantes">
-    <title>Proyecto Comisión 41520</title>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"  crossorigin="crossorigin" as="font">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="preload" href="css/style.css" as="style">
-    <link rel="stylesheet" href="css/style.css">
+    <title>Rafael Medina</title>
     <!-- BOOTSTRAP CSS -->
-   	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
-    <header class="header">
-
-        <div class="contenedor">
-            <div class="barra nav justify-content-end">
-                <a style="color:white;" class="logo" href="index.html">
-                    <h1 style="color: white;" class="logo__nombre no-margin centrar-texto">Rafael<span style="color:white;" class="logo__bold">Medina</span></h1>
-                </a>
-            </div>
-        
-
-            <nav class="navbar navbar-dark bg-dark fixed-top">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Rafael Jesus Medina</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Home</h5>
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">Start</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="Aboutme.html">About Me</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                See more
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item" href="Studies.html">Studies</a></li>
-                                <li><a class="dropdown-item" href="Works.html">Works</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="contacto.html">Contact me</a></li>
-                                </ul>
-                            </li>
-                            </ul>
-                            <form class="d-flex mt-3" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-success" type="submit">Search</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </div>
-
-        <div class="header__texto">
-            <h2 class="no-margin">Welcome to my website</h2>
-            <p class="no-margin">Knowledge does not take place</p>
-        </div>
+    <header class="container-fluid bg-primary d-flex justify-content-center">
+        <p class="text-light mb-0 p-2 fs-6">Bienvenido a mi Sitio Web</p>
     </header>
 
-    <div class="contenedor contenido-principal">
+    <nav  class="navbar navbar-expand-lg navbar-light p-3"  id="menu">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+              <span class="fs-5 text-primary fw-bold">Rafael Medina</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Aboutme.html">Sobre mi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Studies.html">Estudios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Works.html">Metas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contactos</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="email" placeholder="..." aria-label="Suscribete">
+              <button class="btn btn-primary btn-primary-outline-success" type="button">Buscar</button>
+            </form>
+          </div>
+
+        </div>
+    </nav>
+
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="./Imagenes/slide1.jpg" class="d-block w-100" alt="">
+                </div>
+                
+        
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./Imagenes/imagen-articulo-nombres.jpg" class="d-block w-100" alt="...">
+                </div>
+        
+
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./Imagenes/slide2.jpg" class="d-block w-100" alt="...">
+                </div>
+        
+        
+            </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel"  data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel"  data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+        </div>
+
+        <section class="d-flex flex-column justify-content-center align-items-center pt-5  text-center w-50 m-auto" id="intro">
+            <h1 class="p-3 fs-2 border-top border-3">Bienvenidos a mi sitio web donde <span class="text-primary">El conocimiento no tiene lugar<span/></h1>
+            <p class="p-3  fs-4">
+                <span class="text-primary">-Rafael Medina-</span> En la web encontraras diferentes experiencias, trabajos, estudios y metas que quiero realizar a lo largo de mi vida        
+            </p>
+        </section>
+
         <main>
-            <div class="card margin-top" style="max-width: 85rem;">
-                <img src="Imagenes/tecnologia.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h2 class="card-title">My blog</h2>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, temporibus? Saepe sapiente tempora aspernatur nisi! Officia molestiae sit tempore nobis, atque nihil corrupti dolor omnis, odit aliquid dolore saepe numquam.</p>
-                    <a href="Aboutme.html" class="btn btn-primary">READ POST</a>
-                </div>
-            </div>
 
-            <div class="card margin-top" style="max-width: 85rem;">
-                <img src="Imagenes/images.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h2 class="card-title">My goals</h2>
-                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum accusamus maiores fugit mollitia consectetur nesciunt quasi dolorum reiciendis, ipsa sunt, libero quo inventore repudiandae illo itaque blanditiis cumque animi eveniet?</p>
-                    <a href="Aboutme.html" class="btn btn-primary">READ POST</a>
-                </div>
-            </div>
+            <section class="w-100">
+                <div class="row w-75 mx-auto" id="servicios-fila-1">       
+                    <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="Imagenes/tecnologia.jpg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Sobre mi</h5>
+                                    <p class="card-text">Algunos datos importantes, logros y metas a cumplir.</p>
+                                    <a class="btn btn-secondary col-5 mt-1" href="Aboutme.html">Entrar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-            <div class="card margin-top" style="max-width: 85rem;">
-                <img src="Imagenes/plantillas-gratis-wordpress.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h2 class="card-title">My Portfolio</h2>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="Works.html" class="btn btn-primary">ROAD POST</a>
+                    <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start  my-5 icono-wrap">
+                        <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="Imagenes/images.png" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Estudios</h5>
+                                    <p class="card-text">Estudiando la carrera Full stack en 'Coderhouse'</p>
+                                    <a class="btn btn-secondary col-5 mt-1" href="Studies.html">Entrar</a>
+                                    </div>
+                                </div>
+                                </div>
+                    </div>      
                 </div>
-            </div>
+                
+                <div class="row w-75 mx-auto mb-5" id="servicios-fila-2">       
+                    <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start  my-5 icono-wrap">
+                        <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="Imagenes/plantillas-gratis-wordpress.jpg" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Metas</h5>
+                                    <p class="card-text">Algunas metas y trabajos a realziar</p>
+                                    <a class="btn btn-secondary col-5 mt-1" href="Studies.html">Entrar</a>
+                                    </div>
+                                </div>
+                                </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
+                        <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="Imagenes/contactos.jpg" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Conctaco</h5>
+                                    <p class="card-text">Contactame para estar comunicados!</p>
+                                    <a class="btn btn-secondary col-5 mt-1" href="contacto.html">Entrar</a>
+                                    </div>
+                                </div>
+                                </div>
+                    </div>   
+                </div>
+
+                <section class="d-flex flex-column justify-content-center align-items-center pt-5  text-center w-50 m-auto" id="intro">
+                    <h1 class="p-3 fs-2 border-top border-3">Algunos cursos y <span class="text-primary"> Datos<span/></h1>
+                    <p class="p-3  fs-4">
+                        <span class="text-primary">-Rafael Medina-</span>        
+                    </p>
+                </section>
+
+                <div class="row w-75 mx-auto mb-5" id="servicios-fila-2">       
+                    <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start  my-5 icono-wrap">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                            </div>
+                            <div class="col-md-8">
+
+                                <ul class="cursos no-padding">
+                                    <li class="widget-curso">
+                                        <h4 class="no-margin">Full Stack Development</h4>
+                                        <p class="widget-curso__label">Curso: 
+                                            <span class="widget-curso__info">Desarrollo Full stack</span>
+                                        </p>
+                                        <p class="widget-curso__label">Hecho: 
+                                            <span class="widget-curso__info">En CoderHouse</span>
+                                        </p>
+                                        <p class="widget-curso__label">Desarrollo web: 
+                                            <span class="widget-curso__info">En progreso</span>
+                                        </p>
+                                        <p class="widget-curso__label">Javascript: 
+                                            <span class="widget-curso__info">En progreso</span>
+                                        </p>
+                                        <p class="widget-curso__label">React Js: 
+                                            <span class="widget-curso__info">En progreso</span>
+                                        </p>
+                                        <p class="widget-curso__label">Programación Backend: 
+                                            <span class="widget-curso__info">En progreso</span>
+                                        </p>
+                                        <a href="Studies.html" class="btn btn-dark margin-bottom">Read Post</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start  my-5 icono-wrap">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                            </div>
+                            <div class="col-md-8">
+
+                                <ul class="cursos no-padding">
+                                    <li class="widget-curso margin-top">
+                                        <h4 class="no-margin">Date about me</h4>
+                                        <p class="widget-curso__label">Nombre: 
+                                            <span class="widget-curso__info">Rafael Jesus Medina</span>
+                                        </p>
+                                        <p class="widget-curso__label">Edad:
+                                            <span class="widget-curso__info">22 años</span>
+                                        </p>
+                                        <p class="widget-curso__label">Fecha de nacimiento:
+                                            <span class="widget-curso__info">12/05/2000</span>
+                                        </p>
+                                        <p class="widget-curso__label">Ingles:
+                                            <span class="widget-curso__info">Intermedio(estudiando)</span>
+                                        </p>
+                                        <p class="widget-curso__label">Ciudad:
+                                            <span class="widget-curso__info">Salta, Argentina</span>
+                                        </p>
+                                        <a href="Studies.html" class="btn btn-dark margin-bottom">Read Post</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
         </main>
 
-        <aside class="margin-top">
-            <h1>My courses and workshops</h1>
 
-            <ul class="cursos no-padding">
-                <li class="widget-curso">
-                    <h4 class="no-margin">Full Stack Development</h4>
-                    <p class="widget-curso__label">Course: 
-                        <span class="widget-curso__info">In progress</span>
-                    </p>
-                    <p class="widget-curso__label">Made: 
-                        <span class="widget-curso__info">In Coderhouse</span>
-                    </p>
-                    <a href="Studies.html" class="btn btn-dark margin-bottom">Read Post</a>
-                </li>
-
-                <li class="widget-curso margin-top">
-                    <h4 class="no-margin">Date about me</h4>
-                    <p class="widget-curso__label">Web development: 
-                        <span class="widget-curso__info">In progress</span>
-                    </p>
-                    <p class="widget-curso__label">Git: 
-                        <span class="widget-curso__info">In progress</span>
-                    </p>
-                    <p class="widget-curso__label">JavaScript: 
-                        <span class="widget-curso__info">In progress</span>
-                    </p>
-                    <p class="widget-curso__label">React Js:
-                        <span class="widget-curso__info">In progress</span>
-                    </p>
-                    <p class="widget-curso__label">Backend:
-                        <span class="widget-curso__info">In progress</span>
-                    </p>
-                    <a href="Studies.html" class="btn btn-dark margin-bottom">Read Post</a>
-                </li>
-            </ul>
-        </aside>
-    </div>
-
-    <footer class="footer">
-        <div class="contenedor">
-            <div class="barra">
-                <a style="color:white; "class="logo" href="index.html">
-                    <h1 style="color:white;" class="logo__nombre no-margin centrar-texto">Rafael<span style="color:white;" class="logo__bold"> Medina</span></h1>
-                </a>
-
-                <nav style="color:white;" class="navegacion">
-                    <a href="https://www.facebook.com/rafael.jtg1" style="color:white;" class="navegacion__enlace"><img src="./Imagenes/facebook.png" alt="Logo de la pagina" width="20px" height="20px"> Facebook</a>
-                    <a href="https://www.instagram.com/rafaelmedina350/" style="color:white;" class="navegacion__enlace"><img src="./Imagenes/instagram.png" alt="Logo de la pagina" width="20px" height="20px"> Instagram</a>
-                </nav>
-            </div>
+    <footer class="w-100  d-flex  align-items-center justify-content-center flex-wrap">
+        <p class="fs-5 px-3  pt-3">Rafael Medina. &copy; Todos Los Derechos Reservados 2022</p>
+        <div id="iconos" >
+            <a href="https://www.facebook.com/rafael.jtg1"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.instagram.com/rafaelmedina350/"><i class="bi bi-instagram"></i></a>  
         </div>
     </footer>
+
     <!-- JS DE BOOTSTRAP -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script> 
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
